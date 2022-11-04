@@ -1,0 +1,21 @@
+-- derruba banco de dados.
+drop DATABASE tres_chances;
+-- cria banco de dados.
+CREATE DATABASE tres_chances;
+USE tres_chances;
+
+-- primeira tabela.
+CREATE TABLE Jogador(
+id int not null AUTO_INCREMENT primary key,  
+nome varchar(255) not null,
+pontos longtext not null,
+Tempo int not null
+);
+
+-- primeiro insert.
+INSERT INTO Jogador(nome, pontos, Tempo) VALUES
+("Jogador1", 100, 10),
+("Jogador2", 200, 10),
+("Jogador3", 300, 10);
+
+ select * from Jogador;
